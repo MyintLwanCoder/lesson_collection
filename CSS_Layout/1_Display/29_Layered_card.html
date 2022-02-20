@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .layered-card {
+            position: relative;
+        }
+
+        .layered-card::before {
+            background: rgba(0, 0, 0, 0.3);
+            content: '';
+
+            /* Position */
+            top: 0;
+            left: 0;
+            position: absolute;
+            transform: translate(1rem, 1rem);
+
+            /* Size */
+            height: 100%;
+            width: 100%;
+
+            /* Display under the main content */
+            z-index: -1;
+                    }
+    </style>
+</head>
+<body>
+    <div class="layered-card"> 
+        Myint lwin
+    </div>
+    <hr>
+    <h1>
+        Example of <strong>Layered Card</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>
+                .layered-card {
+                    position: relative;
+                }
+        
+                .layered-card::before {
+                    background: rgba(0, 0, 0, 0.3);
+                    content: '';
+        
+                    /* Position */
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    transform: translate(1rem, 1rem);
+        
+                    /* Size */
+                    height: 100%;
+                    width: 100%;
+        
+                    /* Display under the main content */
+                    z-index: -1;
+                            }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

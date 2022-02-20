@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+.container {
+        /* Used to position the overlay */
+        position: relative;
+    }
+
+    .container__overlay {
+        /* Position */
+        left: 0;
+        position: absolute;
+        top: 0;
+
+        /* Take full size */
+        height: 100%;
+        width: 100%;
+
+        /* Center the content */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        /* Add a dark background */
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    </style>
+ <div class="container">
+    <video src="Mobile_lengend.mp4"muted loop autoplay>
+         Hello
+         <div class="contaienr__overlay">
+              <!-- The player button -->
+              <img src="23.png" alt="">
+         </div>
+     </video>
+ </div>
+    <hr>
+    <h1>
+        Example of <strong>Overlay play</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>  
+                .container {
+                    /* Used to position the overlay */
+                    position: relative;
+                }
+            
+                .container__overlay {
+                    /* Position */
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+            
+                    /* Take full size */
+                    height: 100%;
+                    width: 100%;
+            
+                    /* Center the content */
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+            
+                    /* Add a dark background */
+                    background-color: rgba(0, 0, 0, 0.25);
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

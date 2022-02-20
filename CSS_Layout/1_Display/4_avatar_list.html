@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .avatars{
+            display: flex;
+        }
+        .avatars__item{
+            /* Nagative margin make avatar ovelap to prvious one */
+            margin-left: -4px;
+        }
+        .avatar__image {
+            /* Add a white cure between avatars */
+            box-shadow: 0 0 0 4px #fff;
+
+            /* center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            /* Rounded border */
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body>
+    <div class="avatars">
+        <!-- Avatar item -->
+        <div class="avatars__item">
+            <div class="avatars__image">
+                <!-- Image -->
+                <img src="23.png" alt="">
+            </div>
+        </div>
+        <!-- Repeat other avatars -->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur reiciendis facilis, magni, expedita atque at saepe obcaecati deleniti iure illo sed, fugit quidem quia hic voluptatum repudiandae ea aut quis dignissimos blanditiis cum! A eos quidem, harum minus itaque odit sapiente, cum accusamus alias sit maiores reiciendis eius corporis nesciunt numquam molestias eaque. Quas nam voluptatibus omnis cupiditate quibusdam laudantium sequi officiis delectus deleniti maxime illum, ex, porro voluptatum adipisci iusto! Soluta sint aut natus voluptatem, vel ad voluptas magni aspernatur, expedita veniam maxime quos debitis iste at atque! Voluptatibus quia alias impedit nobis provident, cumque odit doloremque autem incidunt.
+    </div>
+    <hr>
+    <h1>
+        Example of <strong>Avatar list</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>
+                .avatars{
+                    display: flex;
+                }
+                .avatars__item{
+                    /* Nagative margin make avatar ovelap to prvious one */
+                    margin-left: -4px;
+                }
+                .avatar__image {
+                    /* Add a white cure between avatars */
+                    box-shadow: 0 0 0 4px #fff;
+        
+                    /* center the content */
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+        
+                    /* Rounded border */
+                    border-radius: 9999px;
+                }
+            </code>
+        </pre>
+    </div>
+    <a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

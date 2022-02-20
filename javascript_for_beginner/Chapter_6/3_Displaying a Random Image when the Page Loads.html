@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Example 5</title>
+    <script type="text/javascript">
+        var myImages = new Array("usa.gif", "canada.gif", "jamaica.gif", "mexico.gif");
+
+        function changeImg(that)
+        {
+        var newImgNumber = Math.round(Math.random() * 3);
+        while (that.src.indexOf(myImages[newImgNumber]) != -1)
+        {
+        newImgNumber = Math.round(Math.random() * 3);
+        }
+        that.src = myImages[newImgNumber];
+        return false;
+        }
+    </script>
+</head>
+<body>
+    <img name="img0" src="usa.gif" border="0" onclick="return changeImg(this)" />
+    <img name="img1" src="mexico.gif" border="0" onclick="return changeImg(this)" />
+</body>
+</body>
+</html>

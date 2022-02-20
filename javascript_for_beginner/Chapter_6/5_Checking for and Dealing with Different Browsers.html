@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Example 7</title>
+    <script type="text/javascript">
+        function getBrowserName()
+        {
+            var lsBroswer = navigator.userAgent;
+            if (lsBroswer.indexOf("MSIE") > 0)
+            {
+                lsBroswer = "MSTE";
+            }
+            else if (lsBroswer.indexOf("Firefox") >= 0)
+            {
+                lsBroswer = "Firefox";
+            }
+            else if (lsBroswer.indexOf("Chrome") >= 0)
+            {
+                lsBroswer = "Chrome";
+            }
+            else if (lsBroswer.indexOf("Safari") >= 0)
+            {
+                lsBroswer = "Safari";
+            }
+            else if (lsBroswer.indexOf("Opera") >= 0)
+            {
+                lsBroswer = "Opera";
+            }
+            else{
+                lsBroswer = "Unknow";
+            }
+            return lsBroswer;
+        }
+
+        function getBrowserVersion()
+        {
+            var findIndex;
+            var browserVersion = 0;
+            var browser = getBrowserName();
+
+            browserVersion = navigator.userAgent;
+            findIndex = browserVersion.indexOf(browser) + browser.length + 1;
+            browserVersion = parseFloat(browserVersion.substring(findIndex, findIndex + 3));
+            return browserVersion;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var browserName = getBrowserName();
+        var browserVersion = getBrowserVersion();
+
+        if (browserName == "MSIE")
+        {
+            if (browserVersion < 7)
+            {
+                document.write("Your version of Internet Explorer is too old");
+            }
+            else
+            {
+                document.write("Your version of Internet Explorer is fully suppoted")
+            }
+        }
+        else if (browserName == "Firefox")
+        {
+            document.write("Firefox is fully supported");
+        }
+        else if (browserName == "Safari")
+        {
+            document.write("Safari is fully supported");
+        }
+        else if (browserName == "Chrome")
+        {
+            document.write("Chrome is fully supported");
+        }
+        
+        else if (browserName == "Opera")
+        {
+            document.write("Opera is fully supported");
+        }
+        else
+        {
+            document.write("<h2>Sorry this browser version is not supported</h2>");
+        }
+    </script>
+    <noscript>
+        <h2>This website requires a browser supporting scripting</h2>
+    </noscript>
+</body>
+</html>

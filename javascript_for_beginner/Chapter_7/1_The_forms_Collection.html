@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Example 1</title>
+    <script type="text/javascript">
+        function window_onload()
+        {
+         var numberForms = document.forms.length;
+         var formIndex;
+         for (formIndex = 0; formIndex < numberForms; formIndex++)
+         {
+             alert(document.forms[formIndex].name);
+         }
+        }
+    </script>
+</head>
+<body onload="window_onload()">
+    <form action="" name="form1">
+        <p>
+            This is inside forml.
+        </p>
+    </form>
+    <form action="" name="form2">
+        <p>
+            This is inside form2.
+        </p>
+    </form>
+    <form action="" name="form3">
+        <p>
+            This inside form3.
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .container {
+                /* Center the content */
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                /* Background color */
+                background-color: #bbb;
+
+                /* Size */
+                height: 32px;
+
+                /* Use to position the corners */
+                position: relative;
+            }
+
+            .container__side {
+                bottom: -8px;
+                position: absolute;
+
+                /* Displayed under the container */
+                z-index: -1;
+
+                /* Background */
+                border: 16px solid #ccc;
+                border-left-color: transparent;
+            }
+
+            .container__side--left {
+                /* Position */
+                left: -24px;
+            }
+
+            .container__side--right {
+                /* Position */
+                right: -24px;
+            }
+
+            .container__triangle {
+                position: absolute;
+                top: 100%;
+
+                border: 8px solid transparent;
+                border-bottom-width: 0;
+                border-top-color: #aaa;
+            }
+
+            .container__triangle--left {
+                border-right-width: 0;
+                left: 0;
+            }
+
+            .container__triangle--right {
+                border-left-width: 0;
+                right: 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- The content -->
+        Myint lwin
+        <!-- The left side -->
+        <div class="container__side container__side--left"></div>
+        <!-- The left triangle displayed below the content -->
+        <div class="container__triangle container__triangle--left"></div>
+        <!-- The right triangle displayed below the content -->
+        <div class="container__triangle container__triangle--right"></div>
+        <!-- The right side -->
+        <div class="container__side container__side--right"></div>
+    </div>
+    <h1>
+        Example of <strong>Ribbon</strong> code in html
+     </h1>
+    <hr>
+    <div>
+        <pre>
+            <code>
+                .container {
+                    /* Center the content */
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+    
+                    /* Background color */
+                    background-color: #bbb;
+    
+                    /* Size */
+                    height: 32px;
+    
+                    /* Use to position the corners */
+                    position: relative;
+                }
+    
+                .container__side {
+                    bottom: -8px;
+                    position: absolute;
+    
+                    /* Displayed under the container */
+                    z-index: -1;
+    
+                    /* Background */
+                    border: 16px solid #ccc;
+                    border-left-color: transparent;
+                }
+    
+                .container__side--left {
+                    /* Position */
+                    left: -24px;
+                }
+    
+                .container__side--right {
+                    /* Position */
+                    right: -24px;
+                }
+    
+                .container__triangle {
+                    position: absolute;
+                    top: 100%;
+    
+                    border: 8px solid transparent;
+                    border-bottom-width: 0;
+                    border-top-color: #aaa;
+                }
+    
+                .container__triangle--left {
+                    border-right-width: 0;
+                    left: 0;
+                }
+    
+                .container__triangle--right {
+                    border-left-width: 0;
+                    right: 0;
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

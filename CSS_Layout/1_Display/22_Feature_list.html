@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: flex;
+
+            /* OPTIONAL: Reverse the order of image and content */
+            flex-direction: row-reverse;
+
+            /* OPTIONAL: Spacing between items */
+            margin:16px 0;
+        }
+        .container__image{
+            width: 128px;
+        }
+        .container__feture{
+            /* Take the remaining width */
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Feature item -->
+    <div class="container">
+        <!-- Image -->
+        <div class="container__image">
+            ...
+        </div>
+        <!-- Right side -->
+        <div class="container__feature">
+            ...
+        </div>
+    </div>
+    <!-- Repeated items -->
+ ...
+ <hr>
+ <h1>
+    Example of <strong>Feature list</strong> code in html
+ </h1>
+    <div>
+        <pre>
+            <code>
+                .container{
+                    display: flex;
+        
+                    /* OPTIONAL: Reverse the order of image and content */
+                    flex-direction: row-reverse;
+        
+                    /* OPTIONAL: Spacing between items */
+                    margin:16px 0;
+                }
+                .container__image{
+                    width: 128px;
+                }
+                .container__feture{
+                    /* Take the remaining width */
+                    flex: 1;
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

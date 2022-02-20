@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            /* Used to position the diagonakl area */
+            position: relative;
+        }
+        .container__diagonal {
+            /* Absolute position */
+            left: 0px;
+            position: absolute;
+            top: 0px;
+
+            /* Take full size */
+            height: 100%;
+            width: 100%;
+
+            /* Create diagonal sides */
+            transform: skew(-5deg);
+
+            /* Background color */
+            background-color: rgba(0, 0, 0, 0.3);
+
+            /* Displayed under the main content */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- The diagonal area -->
+
+        <div class="container__diagonal"></div>
+        <!-- Content -->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corporis quis quia, error consectetur, sed commodi suscipit odio ea obcaecati quae possimus nesciunt? Saepe culpa distinctio dolore deleniti sunt numquam?
+    </div>
+    <hr>
+    <h1>
+        Example of <strong>Diagonal secion</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>
+                .container{
+                    /* Used to position the diagonakl area */
+                    position: relative;
+                }
+                .container__diagonal {
+                    /* Absolute position */
+                    left: 0px;
+                    position: absolute;
+                    top: 0px;
+        
+                    /* Take full size */
+                    height: 100%;
+                    width: 100%;
+        
+                    /* Create diagonal sides */
+                    transform: skew(-5deg);
+        
+                    /* Background color */
+                    background-color: rgba(0, 0, 0, 0.3);
+        
+                    /* Displayed under the main content */
+                    z-index: -1;
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

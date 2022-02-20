@@ -1,0 +1,13 @@
+.important{
+    color: red;
+    font-size: 20px;
+}
+.warning{
+    color: blue;
+    font-size: 20px;
+}
+
+.warning .important{
+    color: green(256, 82%, 30%, 0.72);
+    font-size: 20px;
+}

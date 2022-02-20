@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Example 3</title>
+    <script type="text/javascript">
+        function myButton_onmouseup()
+        {
+            document.form1.myButton.value = "Mouse Gone Up";
+        }
+        function myButton_onmousedown()
+        {
+            document.form1.myButton.value = "Mouse Goes Down";
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="form1">
+        <input type="button" name="myButton" value="Mouse Goes Up" onmouseup="myButton_onmouseup" onmousedown="myButton_onmousedown">
+    </form>
+</body>
+</html>

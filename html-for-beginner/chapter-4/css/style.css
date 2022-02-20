@@ -1,0 +1,9 @@
+div[data-color='red']{
+    color: red;
+}
+div[data-color='green']{
+    color: green;
+}
+div[data-color='blue']{
+    color: blue;
+}

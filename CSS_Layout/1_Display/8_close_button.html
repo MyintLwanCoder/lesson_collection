@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .button {
+                        /* Reset */
+                        background-color: transparent;
+                        border-color: transparent;
+
+                        /* Cursor */
+                        cursor: pointer;
+
+                        /* Size */
+                        height: 32px;
+                        width: 32px;
+
+                        /* Used to position the inner */
+                        position: relative;
+                    }
+
+                    .button__line {
+                        /* Background color */
+                        background-color: rgba(0, 0, 0, 0.3);
+
+                        /* Position */
+                        position: absolute;
+
+                        /* Size */
+                        height: 1px;
+                        width: 100%;
+                    }
+
+                    .button__line--first {
+                        /* Position */
+                        left: 0px;
+                        top: 50%;
+                        transform: translate(0%, -50%) rotate(45deg);
+
+                        /* Size */
+                        height: 1px;
+                        width: 100%;
+                    }
+
+                    .button__line--second {
+                        /* Position */
+                        left: 50%;
+                        top: 0px;
+                        transform: translate(-50%, 0%) rotate(45deg);
+
+                        /* Size */
+                        height: 100%;
+                        width: 1px;
+                    }
+    </style>
+</head>
+<body>
+    <button class="button">
+        <div class="button__line button__line--first"></div>
+
+        <div class="button__line button__line--second"></div>
+    </button>
+    <hr>
+    <h1>
+        Example of <strong>Close button</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>
+                .button {
+                    /* Reset */
+                    background-color: transparent;
+                    border-color: transparent;
+
+                    /* Cursor */
+                    cursor: pointer;
+
+                    /* Size */
+                    height: 32px;
+                    width: 32px;
+
+                    /* Used to position the inner */
+                    position: relative;
+                }
+
+                .button__line {
+                    /* Background color */
+                    background-color: rgba(0, 0, 0, 0.3);
+
+                    /* Position */
+                    position: absolute;
+
+                    /* Size */
+                    height: 1px;
+                    width: 100%;
+                }
+
+                .button__line--first {
+                    /* Position */
+                    left: 0px;
+                    top: 50%;
+                    transform: translate(0%, -50%) rotate(45deg);
+
+                    /* Size */
+                    height: 1px;
+                    width: 100%;
+                }
+
+                .button__line--second {
+                    /* Position */
+                    left: 50%;
+                    top: 0px;
+                    transform: translate(-50%, 0%) rotate(45deg);
+
+                    /* Size */
+                    height: 100%;
+                    width: 1px;
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

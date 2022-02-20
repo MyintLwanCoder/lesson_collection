@@ -1,0 +1,18 @@
+.Myint{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    color:red;
+}
+.lwin{
+    font-size: 20px;;
+    background-color: red;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Myint_lwin{
+    font: size 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: green;
+    color: yellow;
+}

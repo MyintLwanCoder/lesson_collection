@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Learning</title>
+    <link rel="shortcut icon" href="favicon.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            align-items: center;
+            display: flex;
+
+            /* bottom border */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+            /* Spacing */
+            padding: 12px 0px;
+        }
+        .container__feature {
+            /* Take available width */
+            flex: 1;
+
+            /* Spacing */
+            margin-right: 16px;
+        }
+        .container_model {
+            /* Center the content */
+            display: flex;
+            justify-content: center;
+
+            /* spacing */
+            margin-right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Feature name -->
+        <div class="container__feature">
+            ...
+        </div>
+
+        <!-- The model -->
+        <div class="container__model">
+            <!-- For the first row: display the model name(Basic, Pro, etc.) From the second row: display  yes/no icon indicating the feature is available or not -->
+            ...
+        </div>
+
+        <!-- Repeated other models -->
+         ...
+    </div>
+    <!-- Repeated items -->
+    ...
+    <hr>
+    <h1>
+        Example of <strong>Feature Comparison</strong> code in html
+     </h1>
+    <div>
+        <pre>
+            <code>
+                .container {
+                    align-items: center;
+                    display: flex;
+        
+                    /* bottom border */
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        
+                    /* Spacing */
+                    padding: 12px 0px;
+                }
+                .container__feature {
+                    /* Take available width */
+                    flex: 1;
+        
+                    /* Spacing */
+                    margin-right: 16px;
+                }
+                .container_model {
+                    /* Center the content */
+                    display: flex;
+                    justify-content: center;
+        
+                    /* spacing */
+                    margin-right: 16px;
+                }
+            </code>
+        </pre>
+    </div>
+<a  href="../index.html" class="btn btn-primary">Back To Index</a>
+</body>
+</html>

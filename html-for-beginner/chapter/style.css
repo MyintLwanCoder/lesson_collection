@@ -1,0 +1,13 @@
+h1{
+    color: green;
+}
+div,p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+div,a:hover{
+    color: red;
+}
+div,a,span{
+    font-weight: bold;
+}
